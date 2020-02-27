@@ -26,6 +26,9 @@
   text-transform: uppercase;
   font-family: "Lato";
   font-weight: bolder;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .services .section-intro p,
@@ -90,7 +93,7 @@
 
 /*splash*/
 .splash {
-  height: 80vh;
+  height: 100vh;
   background-image: url("https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +125,7 @@
   font-family: "Lato";
   text-transform: uppercase;
   font-size: 74px;
+  text-align: center;
 }
 
 .splash .container button {
@@ -255,7 +259,6 @@ footer.footer ul {
   list-style: none;
   position: absolute;
   left: 50%;
-  bottom: 50%;
   bottom: -12px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -281,5 +284,96 @@ footer.footer ul li a {
 
 footer.footer ul li a:hover {
   color: #F9D136;
+}
+
+/*RWD*/
+@media (max-width: 1000px) {
+  .navigation .nav-accual {
+    width: 60%;
+  }
+  /*splash*/
+  .splash .container h1 {
+    margin: 0 auto;
+    font-size: 60px;
+  }
+  /*portfolio*/
+  .portfolio .item-group .item {
+    width: 40%;
+  }
+}
+
+@media (max-width: 749px) {
+  .navigation .nav-accual {
+    width: 80%;
+  }
+  /*splash*/
+  .splash .container h3 {
+    font-size: 26px;
+  }
+  .splash .container h1 {
+    margin: 0 auto;
+    font-size: 58px;
+  }
+  /*footer*/
+  footer.footer span {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    text-align: center;
+  }
+  footer.footer ul {
+    bottom: -15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 649px) {
+  .navigation .logo {
+    display: none;
+  }
+  .navigation .nav-accual {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  .navigation .nav-accual a {
+    font-size: 12px;
+  }
+  /*splash*/
+  .splash .container h3 {
+    font-size: 26px;
+  }
+  .splash .container h1 {
+    margin: 0 auto;
+    font-size: 45px;
+  }
+  .splash .container button {
+    margin: 10px auto 0 auto;
+    padding: 15px 30px;
+    font-size: 12px;
+  }
+  /*services*/
+  .services .features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .services .features .feature-item {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+  /*portfolio*/
+  .portfolio .item-group .item {
+    width: 65%;
+  }
+}
+
+@media (max-width: 440px) {
+  /*portfolio*/
+  .portfolio .item-group .item {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

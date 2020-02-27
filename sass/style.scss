@@ -29,6 +29,10 @@ $text-color:#999;
             text-transform: uppercase;
             font-family: $header-font;
             font-weight: bolder;
+            text-align: center;
+            // padding: 0 10px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         p {
@@ -85,7 +89,7 @@ $text-color:#999;
 
 /*splash*/
 .splash {
-    height: 80vh;
+    height: 100vh;
     background-image: url("https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     display: flex;
 
@@ -108,6 +112,7 @@ $text-color:#999;
             font-family: $header-font;
             text-transform: uppercase;
             font-size: 74px;
+            text-align: center;
         }
 
         button {
@@ -224,7 +229,6 @@ footer.footer {
         list-style: none;
         position: absolute;
         left: 50%;
-        bottom: 50%;
         bottom: -12px;
         transform: translateX(-50%);
 
@@ -247,6 +251,155 @@ footer.footer {
                 &:hover {
                     color: $project-color;
                 }
+            }
+        }
+    }
+}
+
+/*RWD*/
+@media (max-width: 1000px) {
+    .navigation {
+        .nav-accual {
+            width: 60%;
+        }
+    }
+
+    /*splash*/
+    .splash {
+        .container {
+
+            h1 {
+                margin: 0 auto;
+                font-size: 60px;
+            }
+        }
+    }
+
+    /*portfolio*/
+    .portfolio {
+
+        .item-group {
+
+            .item {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 749px) {
+    .navigation {
+        .nav-accual {
+            width: 80%;
+        }
+    }
+
+    /*splash*/
+    .splash {
+
+        .container {
+
+            h3 {
+                font-size: 26px;
+            }
+
+            h1 {
+                margin: 0 auto;
+                font-size: 58px;
+            }
+        }
+    }
+
+    /*footer*/
+    footer.footer {
+
+        span {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        ul {
+            bottom: -15px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 649px) {
+    .navigation {
+
+        .logo {
+            display: none;
+        }
+
+        .nav-accual {
+            justify-content: space-evenly;
+            width: 100%;
+
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
+    /*splash*/
+    .splash {
+
+        .container {
+
+            h3 {
+                font-size: 26px;
+            }
+
+            h1 {
+                margin: 0 auto;
+                font-size: 45px;
+            }
+
+            button {
+                margin: 10px auto 0 auto;
+                padding: 15px 30px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    /*services*/
+    .services {
+
+        .features {
+            flex-wrap: wrap;
+
+            .feature-item {
+                flex-basis: 55%;
+            }
+        }
+    }
+
+    /*portfolio*/
+    .portfolio {
+
+        .item-group {
+
+            .item {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+
+    /*portfolio*/
+    .portfolio {
+
+        .item-group {
+
+            .item {
+                width: 90%;
             }
         }
     }
