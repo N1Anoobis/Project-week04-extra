@@ -5,9 +5,46 @@ $header-font: 'Lato',
 ;
 $text-Font: 'Slabo 27px',
 ;
+$project-color: gold;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*Nav*/
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1600px;
+    margin: auto;
+    background-color: #ddd;
+    padding-top: 20px;
+
+    .logo {
+        font-family: $logo-font;
+        color: $project-color;
+        font-size: 28px;
+    }
+
+    .nav-accual {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $header-font;
+            color: white;
+            transition: .3s;
+
+            &:hover {
+                color: $project-color;
+            }
+        }
+    }
 }
