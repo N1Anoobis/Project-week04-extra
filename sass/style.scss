@@ -5,7 +5,7 @@ $header-font: 'Lato',
 ;
 $text-Font: 'Slabo 27px',
 ;
-$project-color: gold;
+$project-color: #F9D136;
 
 * {
     margin: 0;
@@ -20,8 +20,11 @@ $project-color: gold;
     align-items: center;
     max-width: 1600px;
     margin: auto;
-    background-color: #ddd;
+    background-color: transparent;
     padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 
     .logo {
         font-family: $logo-font;
@@ -44,6 +47,57 @@ $project-color: gold;
 
             &:hover {
                 color: $project-color;
+            }
+        }
+    }
+}
+
+/*splash*/
+.splash {
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        h3 {
+            margin: auto;
+            font-family: $text-Font;
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 22px;
+        }
+
+        h1 {
+            margin: 15px auto;
+            font-family: $header-font;
+            text-transform: uppercase;
+            font-size: 46px;
+        }
+
+        button {
+            margin:10px auto 0 auto;
+            padding: 15px 30px;
+            color: white;
+            font-weight: bolder;
+            text-transform: uppercase;
+            background-color: $project-color;
+            border-color: $project-color;
+            border-style: solid;;
+            outline-color: $project-color;
+            transition: .4s;
+            border-radius: 4%;
+            
+            &:hover {
+                color: $project-color;
+                background-color: transparent;
             }
         }
     }

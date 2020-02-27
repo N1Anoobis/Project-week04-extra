@@ -15,13 +15,16 @@
       align-items: center;
   max-width: 1600px;
   margin: auto;
-  background-color: #ddd;
+  background-color: transparent;
   padding-top: 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 .navigation .logo {
   font-family: "Great Vibes";
-  color: gold;
+  color: #F9D136;
   font-size: 28px;
 }
 
@@ -43,6 +46,62 @@
 }
 
 .navigation .nav-accual a:hover {
-  color: gold;
+  color: #F9D136;
+}
+
+/*splash*/
+.splash {
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/2473183/pexels-photo-2473183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.splash .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  color: white;
+}
+
+.splash .container h3 {
+  margin: auto;
+  font-family: "Slabo 27px";
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.splash .container h1 {
+  margin: 15px auto;
+  font-family: "Lato";
+  text-transform: uppercase;
+  font-size: 46px;
+}
+
+.splash .container button {
+  margin: 10px auto 0 auto;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: #F9D136;
+  border-color: #F9D136;
+  border-style: solid;
+  outline-color: #F9D136;
+  transition: .4s;
+  border-radius: 4%;
+}
+
+.splash .container button:hover {
+  color: #F9D136;
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
