@@ -30,7 +30,6 @@ $text-color:#999;
             font-family: $header-font;
             font-weight: bolder;
             text-align: center;
-            // padding: 0 10px;
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -48,7 +47,6 @@ $text-color:#999;
 
 /*Nav*/
 .navigation {
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -192,7 +190,8 @@ $text-color:#999;
         margin-bottom: 120px;
 
         .item {
-            width: 26%;
+            width: calc(33.333% - 40px);
+            
             object-fit: cover;
             margin-bottom: 150px;
             background-color: white;

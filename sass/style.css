@@ -220,7 +220,7 @@
 }
 
 .portfolio .item-group .item {
-  width: 26%;
+  width: calc(33.333% - 40px);
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 150px;
