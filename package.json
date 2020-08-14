@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "homepage": "https://n1anoobis.github.io/Project-week04-extra/",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
